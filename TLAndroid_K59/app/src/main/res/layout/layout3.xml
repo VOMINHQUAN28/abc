@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:id="@+id/layout1"
+      android:background="#3F51B5">
+
+      <TextView
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/text1"
+          android:textSize="35dp"
+          android:background="#3f51b5"
+          android:textColor="#ffffff"
+          android:textStyle="bold"
+          android:text="Vietnamese food"
+          android:layout_weight="1"/>
+  </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/layout1"
+          android:orientation="vertical"
+          android:weightSum="2">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="3">
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_weight="1">
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:weightSum="4"
+                          android:orientation="horizontal">
+
+                          <TextView
+                              android:id="@+id/name"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textStyle="bold"
+                              android:layout_weight="3"
+                              android:background="@drawable/radius_btn"
+                              android:gravity="center"
+                              android:text="Họ và tên"
+                              android:textColor="#ffffff"
+                              android:textSize="25dp" />
+                          <EditText
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center|bottom"/>
+                      </LinearLayout>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_weight="1">
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:weightSum="4"
+                          android:orientation="horizontal">
+
+                          <TextView
+                              android:id="@+id/diachi"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textStyle="bold"
+                              android:layout_weight="3"
+                              android:background="@drawable/radius_btn"
+                              android:gravity="center"
+                              android:text="Địa chỉ"
+                              android:textColor="#ffffff"
+                              android:textSize="25dp" />
+                          <EditText
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center|bottom"/>
+              </LinearLayout>
+          </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sdt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/radius_btn"
+            android:gravity="center"
+            android:text="Số điện thoại"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"/>
+    </LinearLayout>
+    </LinearLayout>
+      </LinearLayout>
+      </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="4">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1">
+                      <RadioGroup
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:weightSum="3"
+                          android:orientation="horizontal">
+
+                          <RadioButton
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:text="Nam"
+                              android:textSize="25dp"
+                              android:textStyle="bold"
+                              android:layout_weight="1"/>
+                          <RadioButton
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textStyle="bold"
+                              android:text="Nữ"
+                              android:textSize="25dp"
+                              android:layout_weight="1"/>
+                          <RadioButton
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textStyle="bold"
+                              android:textSize="25dp"
+                              android:text="Khác"
+                              android:layout_weight="1"/>
+
+
+
+                      </RadioGroup>
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_weight="1">
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:weightSum="4"
+                          android:orientation="horizontal">
+
+                          <TextView
+                              android:id="@+id/ghichu"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_weight="3"
+                              android:background="@drawable/radius_btn"
+                              android:gravity="center"
+                              android:text="Ghi chú đơn hàng"
+                              android:textColor="#ffffff"
+                              android:textSize="25dp" />
+                          <EditText
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center|bottom"/>
+                      </LinearLayout>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textSize="30dp"
+                          android:text="Xác nhận thông tin đơn hàng"/>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:weightSum="4">
+                      <TextView
+                          android:id="@+id/back_btn"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textSize="30dp"
+                          android:layout_weight="3"
+                          android:background="#C8CAC8"
+                          android:onClick="back_btn"
+                          android:text="Quay về"/>
+                      <TextView
+                          android:id="@+id/xacnhan_btn"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textSize="30dp"
+                          android:layout_weight="1"
+                          android:background="#3e8b79"
+                          android:textColor="#ffffff"
+                          android:onClick="xacnhan_btn"
+                          android:text="Xác nhận"/>
+                  </LinearLayout>
+                  </LinearLayout>
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+
+
+
+</RelativeLayout>

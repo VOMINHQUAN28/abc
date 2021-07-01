@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main2"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="11">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:textSize="35dp"
+                android:background="#3f51b5"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Vietnamese food"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/banhmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/banhmi" />
+
+                    <ImageButton
+                        android:id="@+id/banhmi_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/radius_btn"/>
+
+
+                    <TextView
+                        android:id="@+id/banhmi_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#3e8b79"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:onClick="banhmi_btn"
+                        android:text="Bánh mì" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gia_banhmi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:onClick="banhmi_btn"
+                                android:background="#03A9F4"
+                                android:text="Giá: 15.000" />
+
+                            <TextView
+                                android:id="@+id/soluong_banhmi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:onClick="banhmi_btn"
+                                android:text="Số lượng:0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pho"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/pho" />
+
+                    <ImageButton
+                        android:id="@+id/pho_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/radius_btn"/>
+
+
+                    <TextView
+                        android:id="@+id/pho_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#3e8b79"
+                        android:textSize="30dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:onClick="pho_btn"
+                        android:text="Phở" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gia_pho"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:background="#03A9F4"
+                                android:onClick="pho_btn"
+                                android:text="Giá: 30.000" />
+
+                            <TextView
+                                android:id="@+id/soluong_pho"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:onClick="pho_btn"
+                                android:text="Số lượng:0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/com"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/com" />
+
+                    <ImageButton
+                        android:id="@+id/com_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/radius_btn"/>
+
+
+                    <TextView
+                        android:id="@+id/com_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#3e8b79"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:onClick="com_btn"
+                        android:text="Cơm" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gia_com"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:background="#03A9F4"
+                                android:onClick="com_btn"
+                                android:text="Giá: 25.000" />
+
+                            <TextView
+                                android:id="@+id/soluong_com"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:onClick="com_btn"
+                                android:text="Số lượng:0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/ga" />
+
+                    <ImageButton
+                        android:id="@+id/ga_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/radius_btn"/>
+
+
+                    <TextView
+                        android:id="@+id/ga_tetx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#3e8b79"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:onClick="ga_btn"
+                        android:text="Gà" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gia_ga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:background="#03A9F4"
+                                android:onClick="ga_btn"
+                                android:text="Giá: 50.000" />
+
+                            <TextView
+                                android:id="@+id/soluong_ga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="25dp"
+                                android:onClick="ga_btn"
+                                android:text="Số lượng:0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tongtien"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textSize="35dp"
+                                android:background="#009688"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Tổng" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.5"
+                                android:background="#009688"
+                                android:textSize="35dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/huy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8"
+                            android:textSize="35dp"
+                            android:background="#BCBCBC"
+                            android:textStyle="bold"
+                            android:onClick="huy_btn"
+
+
+                            android:text="Hủy đơn" />
+
+                        <TextView
+                            android:id="@+id/thanhtoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:onClick="pay_btn"
+                            android:text="Thanh toán" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
